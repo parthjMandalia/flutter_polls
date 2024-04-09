@@ -289,10 +289,11 @@ class FlutterPolls extends HookWidget {
                                 horizontal: 14,
                               ),
                               child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   pollOption.title,
-                                  const SizedBox(width: 10),
-                                  if (votedOption.value != null &&
+
+                                 /* if (votedOption.value != null &&
                                       votedOption.value?.id == pollOption.id)
                                     votedCheckmark ??
                                         const Icon(
@@ -306,7 +307,7 @@ class FlutterPolls extends HookWidget {
                                         ? "0 $votesText"
                                         : '${(pollOption.votes / totalVotes.value * 100).toStringAsFixed(1)}%',
                                     style: votedPercentageTextStyle,
-                                  ),
+                                  ),*/
                                 ],
                               ),
                             ),
