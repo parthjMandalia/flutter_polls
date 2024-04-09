@@ -374,7 +374,7 @@ class FlutterPolls extends HookWidget {
                                             strokeWidth: 2,
                                           ),
                                         )
-                                    : pollOption.title,
+                                    : Text(pollOption.title.toString(),style: TextStyle(color: Colors.white),),
                               ),
                             ),
                           ),
