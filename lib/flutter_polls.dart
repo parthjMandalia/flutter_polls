@@ -291,7 +291,7 @@ class FlutterPolls extends HookWidget {
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Text(pollOption.title.toString(),style: const TextStyle(color: Colors.white),),
+                                  Text("pollOption.title"),
 
                                  /* if (votedOption.value != null &&
                                       votedOption.value?.id == pollOption.id)
@@ -374,7 +374,7 @@ class FlutterPolls extends HookWidget {
                                             strokeWidth: 2,
                                           ),
                                         )
-                                    : Text(pollOption.title.toString(),style: const TextStyle(color: Colors.white),),
+                                    : pollOption.title,
                               ),
                             ),
                           ),
